@@ -50,7 +50,7 @@
         NSLog(@" =============> 我在测试js 调用 oc函数");
         return @"js调用了oc函数";
     };
-    //通过 JSExport 协议,把对象给 js 调用, 对象去掉 oc 的方法
+    //通过 JSExport 协议,把对象给 js 调用, 对象去调 oc 的方法
     //对象要 遵守 JSExport 协议,实现 js 要调用的协议方法
     //调用多个参数的方法,要把 第二参数(包含第二个参数)以后的参数前面的方法体首字母转换成大写
     //如:testOCMethodWithFirstParam:(NSString *)className secondMethod:(int)number ----->  testOCMethodWithFirstParamSecondMethod(className, number)
